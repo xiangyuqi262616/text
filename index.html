@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            width: 300px;
+            margin: 0 auto;
+        }
+        
+        input,
+        .image {
+            width: 300px;
+            float: left;
+            line-height: 40px;
+            font-size: 40px;
+            border: 1px solid #ccc;
+            margin-top: 30px;
+        }
+        
+        input[type="text"] {
+            background-color: pink;
+        }
+        
+        input[type="button"] {
+            background-color: greenyellow;
+        }
+        
+        .image {
+            height: 200px;
+            background-color: yellow;
+        }
+        
+        td {
+            height: 75px;
+            width: 70px;
+            background: url(./26zimu.jpg) no-repeat -70px -20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <input type="text">
+        <input type="button" value="提交">
+        <div class="image">
+
+        </div>
+    </div>
+    <script>
+        var text = document.querySelector('input[type = "text"]');
+        var btn = document.querySelector('input[type = "button"]');
+        var show = document.querySelector('.image');
+        console.log(text);
+        console.log(btn);
+        console.log(show);
+
+        btn.onclick = function() {
+            var shuru = text.value;
+
+        }
+    </script>
+</body>
+
+</html>
